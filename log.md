@@ -16,3 +16,17 @@ function solution(number){
   }
   console.log(solution(sum));
 ```
+<br>
+
+# **Day 2**
+<br>
+
+## **Reverse words (codewars)**
+
+```
+function reverseWords(str) {
+  return str.split(' ').map(function(word){
+    return word.split('').reverse().join('');
+  }).join(' ');
+}
+```
