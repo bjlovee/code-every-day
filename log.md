@@ -30,3 +30,20 @@ function reverseWords(str) {
   }).join(' ');
 }
 ```
+
+# **Day 3**
+
+## **Sum of Digits / Digital Root**
+
+```
+function digitalRoot(n) {
+  let root = n;
+  while (root > 9) {
+    root = root
+      .toString()
+      .split("")
+      .reduce((acc, curr) => acc + parseInt(curr), 0);
+  }
+  return root;
+}
+```

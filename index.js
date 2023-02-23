@@ -17,3 +17,15 @@ function solution(number){
       return word.split('').reverse().join('');
     }).join(' ');
   }
+
+  // Day 3 0f 100 
+  function digitalRoot(n) {
+    let root = n;
+    while (root > 9) {
+      root = root
+        .toString()
+        .split("")
+        .reduce((acc, curr) => acc + parseInt(curr), 0);
+    }
+    return root;
+  }
